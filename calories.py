@@ -1,5 +1,5 @@
 food_calories = {
-    # Breakfast (with measurement units in comments)
+    # Breakfast 
     "roti": {"calories": 70, "unit": "medium piece"},
     "plain paratha": {"calories": 150, "unit": "piece","aliases": ["parotha"]},
     "aloo paratha": {"calories": 210, "unit": "piece","aliases": ["aloo parotha"]},
@@ -94,7 +94,7 @@ food_calories = {
     " kashmiri mixture ": {"calories": 240, "unit": "packet"},
     " chana dal ": {"calories": 184, "unit": "packet"},
 
-    # Beverages
+    # drinks
     "coffee": {"calories": 90, "unit": "cup"},
     "black coffee": {"calories": 5, "unit": "cup"},
     "tea": {"calories": 90, "unit": "cup"},
@@ -265,7 +265,7 @@ def find_closest_food(user_input):
 
 def calculate_calories():
     print("Enter the food items you've consumed in last 24 hrs")
-    print("If the guessed item is wrong, enter '0' when asked for quantity.")
+    print("If the shown item is wrong, enter '0' when asked for quantity.")
     print("Enter 'done' when finished.\n")
     
     total_calories = 0
@@ -315,6 +315,8 @@ def calculate_calories():
         print(f"\n TOTAL CALORIES: {total_calories:.1f}")
     else:
         print("\nNo food items entered.")
+    
+    return total_calories
 
 if __name__ == "__main__":
     calculate_calories()
