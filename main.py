@@ -89,6 +89,7 @@ elif (BMI>30):
     goal= 2
 else:
     print("enter valid height and weight\n")
+    BMI, height, weight= bmi()
 
 print(" lets start tracking your habits and make them better\n")
 

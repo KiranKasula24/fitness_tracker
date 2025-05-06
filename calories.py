@@ -297,17 +297,17 @@ def calculate_calories():
                     print("Please enter a positive number.")
                     continue
 
-                # ✅ CALCULATE CALORIES
+                # CALCULATE CALORIES
                 calories = food_calories[food_item]["calories"] * quantity
                 total_calories += calories
                 items_consumed.append((food_item, quantity, food_calories[food_item]["unit"], calories))
-                print(f"✓ Added {quantity} {food_calories[food_item]['unit']} of {food_item} = {calories:.1f} calories\n")
+                print(f" Added {quantity} {food_calories[food_item]['unit']} of {food_item} = {calories:.1f} calories\n")
                 break
 
             except ValueError:
                 print("Please enter a valid number or 0 if the item is wrong.")
     
-    # ✅ SUMMARY
+    #  SUMMARY
     if items_consumed:
         print("\n--- Your Consumption Summary ---")
         for item, qty, unit, cals in items_consumed:
