@@ -202,22 +202,22 @@ def CB_WORKOUTperMin(WO_Type, weight):
 
 w = weight
 perMin=CB_WORKOUTperMin(WO_Type, weight)
-CB_WORKOUT= perMin * WO_Dur
+CB_WORKOUT= round(perMin * WO_Dur,2)
 print(f"Your calories burnt by workout is {CB_WORKOUT} calories\n")
 
-net_calories = cal - CB_STEPS - CB_WORKOUT
+net_calories = round(cal - CB_STEPS - CB_WORKOUT,2)
 print(f"Your net calories are {net_calories} calories\n")
 
 if goal == 1:
     if net_calories < 0:
-        print("You need to eat more calories")
+        print("You need to eat more calories\n")
     else:
-        print("You are on the right track")
+        print("You are on the right track\n")
 elif goal == 2:
     if net_calories > 0:
-        print("You need to eat less calories")
+        print("You need to eat less calories\n")
     else:
-        print("You are on the right track") 
+        print("You are on the right track\n") 
 
 
 
@@ -245,20 +245,20 @@ else:
     print("Not enough past data to compare.")
 
 if weight < previous_entries[-1][2]:
-    print("You have lost weight since your last entry.")
+    print("You have lost weight since your last entry.\n")
 elif weight > previous_entries[-1][2]:
-    print("You have gained weight since your last entry.")
+    print("You have gained weight since your last entry.\n")
 elif weight == previous_entries[-1][2]: 
-    print("Your weight has remained the same since your last entry.")       
+    print("Your weight has remained the same since your last entry.\n")       
 
 if BMI < previous_entries[-1][3]:
-    print("Your BMI has decreased since your last entry.")  
+    print("Your BMI has decreased since your last entry.\n")  
 elif BMI > previous_entries[-1][3]:
-    print("Your BMI has increased since your last entry.")  
+    print("Your BMI has increased since your last entry.\n")  
 elif BMI == previous_entries[-1][3]:
-    print("Your BMI has remained the same since your last entry.")
+    print("Your BMI has remained the same since your last entry.\n")
 
 
 print("Thank you for using the fitness tracker! , hope to see you again \n")
 
-    
+print("Have a great day ahead!")
