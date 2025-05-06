@@ -1,4 +1,4 @@
-import sqlite3
+"""import sqlite3
 
 # Connect to database (or create one if it doesn't exist)
 conn = sqlite3.connect('fitness_tracker.db')
@@ -58,3 +58,6 @@ def login():
     else:
         print("❌ Invalid login.")
         return None
+
+
+"""

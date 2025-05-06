@@ -1,6 +1,6 @@
 food_calories = {
     # Breakfast 
-    "roti": {"calories": 70, "unit": "medium piece"},
+    "roti": {"calories": 70, "unit": "medium piece","aliases": ["chapati"]},
     "plain paratha": {"calories": 150, "unit": "piece","aliases": ["parotha"]},
     "aloo paratha": {"calories": 210, "unit": "piece","aliases": ["aloo parotha"]},
     "plain dosa": {"calories": 133, "unit": "piece"},
@@ -72,7 +72,7 @@ food_calories = {
     "veg manchurian": {"calories": 300, "unit": "6 pieces","aliases": ["manchuria"]},
     "chicken manchurian": {"calories": 350, "unit": "6 pieces"},
     "gobi manchurian": {"calories": 320, "unit": "bowl"},
-    "paneer manchurian": {"calories": 350, "unit": "bowl"},
+    "paneer": {"calories": 350, "unit": "bowl"},
     "chilli paneer": {"calories": 400, "unit": "bowl"},
     "chilli chicken": {"calories": 450, "unit": "bowl"},
     "crispy baby corn": {"calories": 300, "unit": "bowl"},
@@ -82,7 +82,7 @@ food_calories = {
     "bingo chips": {"calories": 135, "unit": "10 rs pack"},
     "kurkure": {"calories": 130, "unit": "10 rs pack"},
     "tooyumm chips": {"calories": 115, "unit": "10 rs pack"},
-    "puff": {"calories": 150, "unit": "piece"},
+    "puff": {"calories": 150, "unit": "piece","aliases": ["veg puff"]},
     " aloo bhujia ": {"calories": 240, "unit": "packet"},
     " bhujia sev ": {"calories": 210, "unit": "packet"},
     " moong dal ": {"calories": 184, "unit": "packet"},
