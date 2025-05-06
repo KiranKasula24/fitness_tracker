@@ -73,6 +73,81 @@ cal= c.calculate_calories()
 print(f"Your calorie intake is {cal} calories\n")
 
 
-#steps = int(input("Enter your steps count in last 24 hours"))
+steps = int(input("Enter your steps count in last 24 hours"))
+
+CB_STEPS = 0.415 * (height *0.01)* weight * 0.57 * steps / 1000
+print(f"Your calories burnt by steps is {CB_STEPS} calories\n")
+
+print("Enter your workout type \n")
+WO_Type = int(input("enter your workout type(number) \n 0.no workout \n 1. cardio_moderate \n 2. cardio_intense \n 3. lifting_light \n 4. lifting_heavy \n 5. hiit \n 6. yoga \n 7. dance\n"))
+WO_Dur= int(input("Enter your workout duration in minutes \n"))
 
 
+
+def CB_WORKOUTperMin(WO_Type, weight):
+    workout_type = workout_type.lower()
+
+    if WO_Type == 0:
+        print("please consider working out")
+        return 0.0
+
+    
+    elif WO_Type == "1":
+        if weight <= 60:
+            return 6.0
+        elif weight <= 70:
+            return 7.0
+        else:
+            return 8.0
+
+    elif WO_Type == "2":
+        if weight <= 60:
+            return 10.0
+        elif weight <= 70:
+            return 11.7
+        else:
+            return 13.3
+
+    elif WO_Type == "3":
+        if  weight<= 60:
+            return 3.5
+        elif weight <= 70:
+            return 4.1
+        else:
+            return 4.7
+
+    elif WO_Type == "4":
+        if weight <= 60:
+            return 6.0
+        elif weight <= 70:
+            return 7.0
+        else:
+            return 8.0
+
+    elif WO_Type == "5":
+        if weight <= 60:
+            return 11.0
+        elif weight <= 70:
+            return 13.0
+        else:
+            return 15.0
+
+    elif WO_Type == "6":
+        if weight <= 60:
+            return 2.5
+        elif weight <= 70:
+            return 2.9
+        else:
+            return 3.3
+
+
+    elif workout_type == "7":
+        if weight <= 60:
+            return 6.0
+        elif weight <= 70:
+            return 7.0
+        else:
+            return 8.0
+
+    else:
+        print("enter valid workout type")  
