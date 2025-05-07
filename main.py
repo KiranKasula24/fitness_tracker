@@ -12,14 +12,14 @@ def login_or_signup():
         old_user = 1
         user_id = t.login()
         if user_id is None:
-            print("Login failed. try logging in again.")
+            print("Login failed. try logging in again. or signup if new user.")
             login_or_signup()
         
     elif L_or_S == 2:
         user_id = t.signup()
         old_user = 0
         if user_id is None:
-            print("Signup failed. try signing up again or login if new user.")
+            print("Signup failed. try signing up again or login if old user.")
             login_or_signup()
         else:
              old_user = 0
